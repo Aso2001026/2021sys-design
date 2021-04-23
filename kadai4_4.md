@@ -10,5 +10,7 @@ else if(weather=2)
 :雨です;
 else
 :不明です;
+endif
+end
 @enduml
 ```
