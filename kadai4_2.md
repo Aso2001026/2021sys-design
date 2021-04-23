@@ -1,4 +1,5 @@
-```startuml
+```uml
+@startuml
 start
 :体力＝１０
 if(体力＜=2０) then (ture)
