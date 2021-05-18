@@ -1,3 +1,21 @@
+画像が途切れて表示される場合があります。
+原因は、や画像（png）変換時の負荷のようです。
+ビットマップ（png）ではなく、
+ベクター画像（svg）なら、変換の負荷が下がります。
+たとえば PrantUMLserverでも、
+「view as png」では失敗しても、
+「view as SVG」なら、ちゃんと見えます。
+そこで、PegmatiteのサーバーURLの設定を、
+png変換からSVG変換へ変更していただけるとご覧になることができます。
+
+ 
+
+Chromeの拡張機能一覧からPegmatiteの詳細を選んで、
+「拡張機能のオプション」のBae URLを
+https://www.plantuml.com/plantuml/svg/
+というふうに、末尾をsvgに書き替えてください。
+そして途中で切れていたPrantUML画像を再表示したら、svgで表示されるはずです。
+
 ```uml
 @startuml
 opt アカウントを持っていない
