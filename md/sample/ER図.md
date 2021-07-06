@@ -31,7 +31,7 @@ package "ECサイト" as target_system {
         reg_date
     }
     
-    entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "購入テーブル" as order <order> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]
         --
         order_id
@@ -40,7 +40,7 @@ package "ECサイト" as target_system {
         total_price
     }
     
-    entity "購入詳細テーブル" as purchase_detail <d_purchase_detail> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "購入詳細テーブル" as order_detail  <order_detail> <<T,TRANSACTION_MARK_COLOR>> {
         + detail_id[PK]
         + order_id[PK]
         --
