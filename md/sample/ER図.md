@@ -32,27 +32,22 @@ package "ECサイト" as target_system {
     }
     
     entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>> {
-        + customer_code [PK]
+        + order_id [PK]
         --
         order_id
         ustomer_code
         purchase_date
         total_price
-        mail
-        del_flag
-        reg_date
     }
     
-    entity "購入詳細テーブル" as customer <m_customers> <<T,TRANSACTION_MARK_COLOR>> {
-        + customer_code [PK]
+    entity "購入詳細テーブル" as purchase_detail <d_purchase_detail> <<T,TRANSACTION_MARK_COLOR>> {
+        + detail_id order_id[PK]
         --
-        pass
-        name
-        address
-        tel
-        mail
-        del_flag
-        reg_date
+        detail_id
+        order_id
+        item_code
+        price
+        num
     }
     
     entity "商品マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
