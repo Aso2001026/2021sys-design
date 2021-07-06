@@ -1,10 +1,17 @@
 ```uml
 @startuml
 
-customer       |o-ri-o{     order
-order          ||-ri-|{     order_detail
-order_detail    }-do-||     items
-items          }o-le-||     category
+skinparam class {
+    '図の背景
+    BackgroundColor Snow
+    '図の枠
+    BorderColor Black
+    'リレーションの色
+    ArrowColor Black
+}
+
+!define MASTER_MARK_COLOR Orange 
+!define TRANSACTION_MARK_COLOR DeepSkyBlue
 
  entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
