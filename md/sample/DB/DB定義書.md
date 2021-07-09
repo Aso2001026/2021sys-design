@@ -6,14 +6,14 @@
 
 # データベース設計図
 
-## d_purchase
+## 購入テーブル(d_purchase)
 
-|項目名|型|PK|NN|FK|
-|-----|--|--|--|--|
-|order_id|bigint(20)|○|○||
-|customer_code|varchar(50)||○|○|
-|purchase_date|date||○||
-|total_price|int(11)||○||
+|和名|項目名|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|オーダーID|order_id|bigint(20)|○|○||
+|顧客コード|customer_code|varchar(50)||○|○|
+|購入日|purchase_date|date||○||
+|総額|total_price|int(11)||○||
 
 ## d_purchase_detail
 
