@@ -29,7 +29,7 @@
 |address|varchar(100)||○||
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
-|del_flag|int(1)||||
+|del_flag|int(1)||○||
 |reg_date|date||○||
 
 ## m_category
