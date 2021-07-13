@@ -1,6 +1,6 @@
 # データベース設計図
 
-## d_purchase
+## t_purchase
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
@@ -9,7 +9,7 @@
 |purchase_date|date||○||
 |total_price|int(11)||○||
 
-## d_purchase_detail
+## t_purchase_detail
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
@@ -53,7 +53,7 @@
 |del_flag|int(1)||○||
 |reg_date|date||○||
 
-## d_questions
+## t_questions
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |question_code|int(11)|○|○||
@@ -64,7 +64,7 @@
 |solution_flag|int(1)||○||
 |reg_date|date||○||
 
-## d_answers
+## t_answers
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |question_code|int(11)|○|○|○|
