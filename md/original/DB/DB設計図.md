@@ -52,3 +52,15 @@
 |detail|varchar(500)||||
 |del_flag|int(11)||||
 |reg_date|date||○||
+
+## c_question
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|question_code|int(11)|○|○||
+|name|varchar(20)||○||
+|address|varchar(100)||○||
+|tel|varchar(20)||○||
+|mail|varchar(100)||○||
+|question|varchar(500)||○||
+|reg_date|date||○||
+
