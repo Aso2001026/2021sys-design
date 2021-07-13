@@ -26,6 +26,7 @@
 |customer_code|varchar(50)|○|○||
 |pass|varchar(50)||○||
 |name|varchar(20)||○||
+|postal_code|varchar(15)||○|| 
 |address|varchar(100)||○||
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
@@ -53,14 +54,26 @@
 |del_flag|int(11)||||
 |reg_date|date||○||
 
-## c_question
+## d_question
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |question_code|int(11)|○|○||
 |name|varchar(20)||○||
-|address|varchar(100)||○||
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
 |question|varchar(500)||○||
 |reg_date|date||○||
 
+## d_answer
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|answer_code|int(11)|○|○||
+|employee_code|int(11)||○|○|
+|reg_date|date||○||
+
+## m_enployee
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|employee_code|int(11)|○|○||
+|name|varchar(20)||○||
+|reg_date|date||○||
