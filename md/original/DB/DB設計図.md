@@ -68,6 +68,7 @@
 |-----|--|--|--|--|
 |answer_code|int(11)|○|○||
 |employee_code|int(11)||○|○|
+|answer|varchar(500)||○||
 |reg_date|date||○||
 
 ## m_enployees
