@@ -50,7 +50,7 @@
 |category_id|int(11)||○|○|
 |image|varchar(200)||○||
 |detail|varchar(500)||||
-|del_flag|int(1)||||
+|del_flag|int(1)||○||
 |reg_date|date||○||
 
 ## d_questions
@@ -61,7 +61,7 @@
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
 |question|varchar(500)||○||
-|solution_flag|int(1)||||
+|solution_flag|int(1)||○||
 |reg_date|date||○||
 
 ## d_answers
