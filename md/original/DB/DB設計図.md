@@ -13,9 +13,8 @@
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|detail_id|bigint(20)|○|○||
 |order_id|bigint(20) |○|○|○|
-|item_code|int(11)||○||
+|item_code|int(11)|○|○|○|
 |price|int(11)||○||
 |num|int(11)||○||
 
@@ -54,7 +53,7 @@
 |del_flag|int(11)||||
 |reg_date|date||○||
 
-## d_question
+## d_questions
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |question_code|int(11)|○|○||
@@ -64,14 +63,14 @@
 |question|varchar(500)||○||
 |reg_date|date||○||
 
-## d_answer
+## d_answers
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |answer_code|int(11)|○|○||
 |employee_code|int(11)||○|○|
 |reg_date|date||○||
 
-## m_enployee
+## m_enployees
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |employee_code|int(11)|○|○||
