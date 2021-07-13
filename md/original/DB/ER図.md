@@ -24,6 +24,7 @@ package "ECサイト" as target_system {
         --
         pass
         name
+        postal_code
         address
         tel
         mail
@@ -40,10 +41,9 @@ package "ECサイト" as target_system {
     }
     
     entity "購入詳細テーブル" as order_detail  <order_detail> <<T,TRANSACTION_MARK_COLOR>> {
-        + detail_id[PK]
-        + order_id[PK]
+        + order_id[PK][FK]
+        + item_code[PK][FK]
         --
-        # item_code [FK]
         price
         num
     }
@@ -64,6 +64,16 @@ package "ECサイト" as target_system {
         + category_id [PK]
         --
         name
+        reg_date
+    }
+    
+    entity "質問マスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+        + question_code [PK]
+        --
+        name
+        tel
+        mail
+        question
         reg_date
     }
   }
