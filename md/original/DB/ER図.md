@@ -67,7 +67,7 @@ package "ECサイト" as target_system {
         reg_date
     }
     
-    entity "質問マスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+    entity "質問テーブル" as questions <t_questions> <<T,TRANSACTION_MARK_COLOR>> {
         + question_code [PK]
         --
         name
@@ -76,12 +76,30 @@ package "ECサイト" as target_system {
         question
         reg_date
     }
+    
+     entity "回答テーブル" as answers <t_answers> <<T,TRANSACTION_MARK_COLOR>> {
+        + question_code [PK][FK]
+        + answer_code [PK]
+        --
+        # employee_code [FK]
+        answer
+        reg_date
+    }
+    
+    entity "従業員マスタ" as enployees <m_enployees> <<M,MASTER_MARK_COLOR>> {
+        + m_enployees [PK]
+        --
+        name
+        reg_date
+    }
   }
   
-  customer       |o-ri-o{     order
+customer       |o-ri-o{     order
 order          ||-ri-|{     order_detail
 order_detail    }-do-||     items
 items          }o-le-||     category
+questions      ||-ri-|{     answers
+answers        }o-ri-||     enployees
 
 
 @enduml
