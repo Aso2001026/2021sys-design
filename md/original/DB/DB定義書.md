@@ -3,7 +3,6 @@
 [ER図はこちら](https://github.com/Aso2001026/2021sys-design/blob/main/md/original/DB/ER%E5%9B%B3.md)
 
 # データベース設計図
-[データベース設計図はこちら](https://github.com/Aso2001026/2021sys-design/blob/main/md/original/DB/DB%E8%A8%AD%E8%A8%88%E5%9B%B3.md)
 
 ## t_purchase
 
